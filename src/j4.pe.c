@@ -6,8 +6,7 @@
 int		serve_index(struct http_request *);
 int		serve_qr(struct http_request *);
 
-int
-serve_index(struct http_request *req)
+int serve_index(struct http_request *req)
 {
 	int ret;
 
@@ -17,8 +16,7 @@ serve_index(struct http_request *req)
 	return (ret);
 }
 
-int
-serve_qr(struct http_request *req)
+int serve_qr(struct http_request *req)
 {
 	int		ret;
 

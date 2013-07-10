@@ -18,7 +18,7 @@ MEDIA_DIR=media
 SOURCE_DIR=src
 
 # The directory containing the Kore source code.
-KORE_DIR=../../kore
+KORE_DIR=../kore
 if [ ${KORE_DIR} == "notset" ]; then
 	echo "Please edit build.sh and set KORE_DIR properly";
 	exit;
