@@ -1,10 +1,6 @@
-#include <mkdio.h>
-
 #include "kore.h"
 #include "http.h"
 #include "static.h"
-
-#define BLOG_MKD "/tmp/blog.mkd"
 
 int	serve_index(struct http_request *);
 int 	serve_ip(struct http_request *req);
