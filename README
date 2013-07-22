@@ -1,4 +1,6 @@
 Simple web page (https://j4.pe) with Kore : https://kore.io/ | https://github.com/jorisvink/kore
 
+Use markdown for write web page
+
 addart < art.mkd ---> insert article in sqlite db
 j4.pe/b read sqlitedb
