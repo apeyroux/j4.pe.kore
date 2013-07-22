@@ -18,7 +18,7 @@ MEDIA_DIR=media
 SOURCE_DIR=src
 
 # The directory containing the Kore source code.
-KORE_DIR=../kore
+KORE_DIR=../kore/kore
 if [ ${KORE_DIR} == "notset" ]; then
 	echo "Please edit build.sh and set KORE_DIR properly";
 	exit;
@@ -29,7 +29,7 @@ CC=gcc
 CFLAGS="-I. -I${KORE_DIR}/includes -Wall -Wstrict-prototypes \
 	-Wmissing-prototypes -Wmissing-declarations -Wshadow \
 	-Wpointer-arith -Wcast-qual -Wsign-compare -g"
-LDFLAGS=-shared
+LDFLAGS="-shared -lmarkdown"
 MODULE_BUILD_DATE=`date +"%Y-%m-%d %H:%M:%S"`
 
 # Functions used in the build process.
