@@ -1,3 +1,17 @@
+Install pandoc on OpenBSD 5.3
+===
+
+	sudo pkg_add -rv haskell-platform
+	cabal update
+
+*Do not make the updates cabal!*
+
+	cabal install pandoc --ghc-options="+RTS -c -RTS"
+
+	ja@x220 ~ $ pandoc --version
+	pandoc 1.11.1
+
+
 Page perso avec Kore.io
 =====
 
